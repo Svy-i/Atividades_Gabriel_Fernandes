@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Repeticao1 {
+  public void atividade1() {
+    Scanner entrada = new Scanner(System.in);
+    int numero1;
+    int numero2;
+    System.out.println("Informe um número para receber os próximos 100 números inteiros.");
+    numero1 = entrada.nextInt();
+    numero2 = numero1 + 100;
+    for (;numero1<= numero2;numero1++){
+      System.out.println(numero1);
+    }
+    
+  }
+}
