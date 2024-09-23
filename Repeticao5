@@ -1,0 +1,46 @@
+import java.util.Scanner;
+class Repeticao5 {
+  public void atividade5() {
+    Scanner entrada = new Scanner (System.in);
+    int idade;
+    int pessoa50 = 0;
+    int pessoa = 0;
+    int pessoaPeso = 0;
+    float media;
+    float altura;
+    float soma_alturas = 0;
+    float peso;
+    float porcentagemPeso;
+    
+    for (int contador = 0; contador < 10; contador++){
+      System.out.println("Insira a sua idade: ");
+      idade = entrada.nextInt();
+      
+      if (idade > 50){
+        pessoa50 = pessoa50 + 1;
+      }
+      System.out.println("Insira a sua altura: ");
+      altura = entrada.nextFloat();
+      
+      if (idade >= 10 && idade <= 20){
+        soma_alturas = soma_alturas + altura;
+        pessoa = pessoa + 1;
+      }
+      System.out.println("Insira seu peso em kilos: ");
+      peso = entrada.nextFloat();
+      
+      if (peso < 40){
+        pessoaPeso++;
+      }
+    }
+    soma_alturas = soma_alturas / pessoa;
+    porcentagemPeso = (pessoaPeso / 10.0f) * 100;
+    System.out.println("Tem " + pessoa50 + " pessoas com idade superior a 50 anos.");
+        if (pessoa > 0) {
+            System.out.println("A média da altura das pessoas com idade entre 10 e 20 anos é de " + soma_alturas + ".");
+        } else {
+            System.out.println("Não há pessoas na faixa etária de 10 a 20 anos.");
+        }
+        System.out.println("A porcentagem de pessoas com peso inferior a 40 quilos é de " + porcentagemPeso + "%.");
+  }
+}
