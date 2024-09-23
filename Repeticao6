@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class Repeticao6 {
+  public void atividade6() {
+    Scanner entrada = new Scanner(System.in);
+    int kill;
+    int death;
+    int assist;
+    int winner;
+    do {
+      System.out.println("Quantas kills obtidas?");
+      kill = entrada.nextInt();
+      
+      if (kill <= 5){
+        System.out.println("Noob");
+      }else if (kill >= 20){
+        System.out.println("Master");
+      }
+      System.out.println("Quantas vezes morreu?");
+      death = entrada.nextInt();
+      
+      if (death >= 20){
+        System.out.println("Houston, we have a problem");
+      }
+      System.out.println("Quantas assists?");
+      assist = entrada.nextInt();
+      if (assist >= 20){
+        System.out.println("Team work");
+      }
+      System.out.println("Há um vencedor?\nSe sim digite 1: ");
+      System.out.println("Se não digite 0");
+      winner = entrada.nextInt();
+    } while (winner != 1);
+    
+  }
+}
