@@ -1,1 +1,20 @@
+public class Main {
+    public static void main(String[] args) {
+      Repeticao1 repeticao1 = new Repeticao1();
+      Repeticao2 repeticao2 = new Repeticao2();
+      Repeticao3 repeticao3 = new Repeticao3();
+      Repeticao4 repeticao4 = new Repeticao4();
+      Repeticao5 repeticao5 = new Repeticao5();
+      Repeticao6 repeticao6 = new Repeticao6();
+      Repeticao7 repeticao7 = new Repeticao7();
+      
+      repeticao1.atividade1();
+      repeticao2.atividade2();
+      repeticao3.atividade3();
+      repeticao4.atividade4();
+      repeticao5.atividade5();
+      repeticao6.atividade6();
+      repeticao7.atividade7();
+    }
+}
 
