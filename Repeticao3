@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Repeticao3 {
+  public void atividade3() {
+    Scanner entrada = new Scanner(System.in);
+    double massa;
+    int tempo = 0;
+    
+    System.out.println("Informe a massa do material em gramas do material: ");
+    massa = entrada.nextDouble();
+    
+    while (massa > 0.10){
+      massa = massa * 0.25;
+      tempo = tempo + 30;
+    }
+    System.out.println("Após " + tempo + " segundos, esse material vai ter perdido massas o suficiente para pesar menos de 0.10 gramas");
+  }
+}
