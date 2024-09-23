@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Repeticao4 {
+  public void atividade4() {
+    // vai inserir novos números até o usuário colocar um negativo. Cada número ímpar vai multiplicar entre si e pares vão somar
+    Scanner entrada = new Scanner(System.in);
+    int numeroInteiro = 0;
+    do {
+      if (numeroInteiro % 2 == 0){
+        numeroInteiro = numeroInteiro + numeroInteiro;
+      } else {
+        numeroInteiro = numeroInteiro * numeroInteiro;
+      }
+      System.out.println(numeroInteiro);
+      System.out.println("Insira um número: ");
+      numeroInteiro = entrada.nextInt();
+    } while (numeroInteiro >= 0);
+    
+    
+  }
+}
