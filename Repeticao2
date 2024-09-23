@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Repeticao2 {
+  public void atividade2() {
+    Scanner entrada = new Scanner(System.in);
+    int numeroReal;
+    int numeroInteiro;
+    double resultado;
+    int extra;
+    // 7 * 5 = 35 7+7+7+7+7+7+7 = 35 repita 7 + 7 y vezes
+    System.out.println("Para ver a multiplicação de um número através da adição.");
+    System.out.print("Insira um número: ");
+    numeroInteiro = entrada.nextInt();
+    extra = numeroInteiro;
+    
+    System.out.print("Insira outro número: ");
+    numeroReal = entrada.nextInt();
+    resultado = numeroInteiro * numeroReal;
+    for (int contagem = 0; contagem != numeroReal; contagem++){
+      System.out.println(numeroInteiro);
+      numeroInteiro = extra + numeroInteiro;
+    }
+  }
+}
